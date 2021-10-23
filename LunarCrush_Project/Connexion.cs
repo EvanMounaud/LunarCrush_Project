@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -13,8 +12,8 @@ namespace LunarCrush_Project
 
         public static JObject Connexion(string URL, [Optional] string options, [Optional] string symbol)
         {
-            var urlParameters = "&key=06l2izqhxzk6gzhjdl1hmd";
-            var parameters = urlParameters + symbol + options;
+            var APIKey = "&key=06l2izqhxzk6gzhjdl1hmd";
+            var parameters = APIKey + options + symbol;
 
             HttpClient client = new HttpClient();
 
