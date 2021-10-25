@@ -9,7 +9,7 @@ namespace LunarCrush_Project
         static void Main()
         {
             ListBuilder listBuilder = new ListBuilder();
-            listBuilder.Build("&limit=100");
+            listBuilder.Build("&limit=100&sort=mc");
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

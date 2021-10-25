@@ -17,8 +17,6 @@ namespace LunarCrush_Project
 
             HttpClient client = new HttpClient();
 
-            client.DefaultRequestHeaders.Accept.Add(
-            new MediaTypeWithQualityHeaderValue("application/json"));
 
             HttpResponseMessage response = client.GetAsync(URL + parameters).Result;
             if (response.IsSuccessStatusCode)
